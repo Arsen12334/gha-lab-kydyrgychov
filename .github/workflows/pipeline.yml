@@ -14,6 +14,7 @@ jobs:
 
   show:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Получить файл
         uses: actions/download-artifact@v4
